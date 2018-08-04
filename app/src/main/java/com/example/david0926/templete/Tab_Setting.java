@@ -8,11 +8,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class Frag2 extends Fragment{
+public class Tab_Setting extends Fragment{
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.tab_chat, container, false);
+        return inflater.inflate(R.layout.tab_setting, container, false);
     }
 }

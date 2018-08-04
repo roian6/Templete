@@ -18,13 +18,13 @@ public class TabAdapter extends FragmentPagerAdapter{
 
         switch (position){
             case 0:
-                Frag1 tab1 = new Frag1();
+                Tab_People tab1 = new Tab_People();
                 return tab1;
             case 1:
-                Frag2 tab2 = new Frag2();
+                Tab_Chat tab2 = new Tab_Chat();
                 return tab2;
             case 2:
-                Frag3 tab3 = new Frag3();
+                Tab_Setting tab3 = new Tab_Setting();
                 return tab3;
 
             default: return null;

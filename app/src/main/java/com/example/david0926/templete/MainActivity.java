@@ -3,6 +3,7 @@ package com.example.david0926.templete;
 import android.app.Fragment;
 import android.content.Context;
 import android.graphics.Color;
+import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.GravityCompat;
@@ -12,47 +13,18 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.AttributeSet;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
-import java.util.zip.Inflater;
-
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
-
-    //dec
-    RecyclerView rcv;
-    RecycleAdapter_People rcvAdap;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        //RecyclerView_People
-//        rcv = findViewById(R.id.people_recycler);
-//        rcv.setLayoutManager(new LinearLayoutManager());
-//        rcvAdap = new RecycleAdapter_People();
-//        rcv.setAdapter(rcvAdap);
-
-//        for(int i=0;i<5;i++){
-//            RecycleModel_People model = new RecycleModel_People();
-//            model.setName("Someone");
-//            model.setMsg("Hello World!");
-//            model.setTime("12:53 PM");
-//            rcvAdap.add(model);
-//            rcvAdap.notifyDataSetChanged();
-//        }
-
-
-
 
         //Toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -108,6 +80,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         //end of Navigation Drawer
+
+
+        //fab
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//            }
+//        });
 
     }
 

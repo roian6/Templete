@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-public class Frag1 extends Fragment{
+public class Tab_People extends Fragment{
 
 
     RecyclerView rcv;
@@ -36,6 +36,7 @@ public class Frag1 extends Fragment{
             profile.setBackground(new ShapeDrawable(new OvalShape()));
             profile.setClipToOutline(true);
             RecycleModel_People model = new RecycleModel_People();
+            model.setProfile(profile);
             model.setName("Someone");
             model.setMsg("Hello World!");
             model.setTime("12:53 PM");
