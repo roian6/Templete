@@ -21,7 +21,7 @@
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:id="@+id/people_profile"
+                android:id="@+id/chat_profile"
                 android:src="@drawable/ic_person"
                 android:background="#727272"
                 />
@@ -31,12 +31,12 @@
                 android:orientation="vertical"
                 android:layout_centerInParent="true"
                 android:layout_marginLeft="12dp"
-                android:layout_toRightOf="@+id/people_profile">
+                android:layout_toRightOf="@+id/chat_profile">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Name"
-                    android:id="@+id/people_name"
+                    android:id="@+id/chat_name"
                     android:textColor="#000000"
                     android:fontFamily=""
                     />
@@ -45,7 +45,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Message"
-                    android:id="@+id/people_msg"
+                    android:id="@+id/chat_msg"
                     android:maxLines="1"
                     android:ellipsize="end"
                     />
@@ -53,16 +53,16 @@
 
             </LinearLayout>
 
-            <ImageView
-                android:layout_width="wrap_content"
+            <TextView
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/people_morebtn"
+                android:text="12:53 PM"
+                android:textSize="12dp"
+                android:id="@+id/chat_time"
                 android:textColor="#000000"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:src="@drawable/ic_more_vert"
-
-            />
+                android:layout_gravity="center"
+                android:gravity="right"
+                />
 
         </RelativeLayout>
 

@@ -2,8 +2,8 @@ package com.example.david0926.templete;
 
 import android.widget.ImageView;
 
-public class RecycleModel_People {
-    private String name, msg;
+public class RecycleModel_Chat {
+    private String name, msg, time;
     private ImageView profile;
 
     public ImageView getProfile() {
@@ -30,4 +30,11 @@ public class RecycleModel_People {
         this.msg = msg;
     }
 
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
+    }
 }

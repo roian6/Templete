@@ -9,28 +9,29 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-public class RecycleAdapter_People extends RecyclerView.Adapter<RecycleHolder_People> {
+public class RecycleAdapter_Chat extends RecyclerView.Adapter<RecycleHolder_Chat> {
 
-    List<RecycleModel_People> items = new ArrayList<>();
+    List<RecycleModel_Chat> items = new ArrayList<>();
 
-    public void add(RecycleModel_People data){
+    public void add(RecycleModel_Chat data){
         items.add(data);
         notifyDataSetChanged();
     }
 
     @NonNull
     @Override
-    public RecycleHolder_People onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public RecycleHolder_Chat onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.recycle_item_people, parent, false);
-        return new RecycleHolder_People(v);
+                .inflate(R.layout.recycle_item_chat, parent, false);
+        return new RecycleHolder_Chat(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecycleHolder_People holder, int position) {
-        RecycleModel_People item = items.get(position);
+    public void onBindViewHolder(@NonNull RecycleHolder_Chat holder, int position) {
+        RecycleModel_Chat item = items.get(position);
         holder.name.setText(item.getName());
         holder.msg.setText(item.getMsg());
+        holder.time.setText(item.getTime());
     }
 
     @Override

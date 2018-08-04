@@ -82,14 +82,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //end of Navigation Drawer
 
 
-        //fab
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//
-//            }
-//        });
+
 
     }
 

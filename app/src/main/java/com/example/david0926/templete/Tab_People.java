@@ -9,6 +9,9 @@ import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -38,12 +41,13 @@ public class Tab_People extends Fragment{
             RecycleModel_People model = new RecycleModel_People();
             model.setProfile(profile);
             model.setName("Someone");
-            model.setMsg("Hello World!");
-            model.setTime("12:53 PM");
+            model.setMsg("//"+"Coding All Day"+"//");
             rcvAdap.add(model);
             rcvAdap.notifyDataSetChanged();
         }
 
         return v;
     }
+
+
 }
