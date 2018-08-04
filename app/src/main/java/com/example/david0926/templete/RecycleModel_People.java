@@ -1,7 +1,18 @@
 package com.example.david0926.templete;
 
+import android.widget.ImageView;
+
 public class RecycleModel_People {
     private String name, msg, time;
+    private ImageView profile;
+
+    public ImageView getProfile() {
+        return profile;
+    }
+
+    public void setProfile(ImageView profile) {
+        this.profile = profile;
+    }
 
     public String getName() {
         return name;

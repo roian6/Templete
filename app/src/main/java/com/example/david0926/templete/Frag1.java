@@ -30,13 +30,12 @@ public class Frag1 extends Fragment{
         rcvAdap = new RecycleAdapter_People();
         rcv.setAdapter(rcvAdap);
 
-        for(int i=0;i<5;i++) {
+        for(int i=0;i<10;i++) {
             View itemImageView = inflater.inflate(R.layout.recycle_item_people, container, false);
             ImageView profile = itemImageView.findViewById(R.id.people_profile);
             profile.setBackground(new ShapeDrawable(new OvalShape()));
+            profile.setClipToOutline(true);
             RecycleModel_People model = new RecycleModel_People();
-
-
             model.setName("Someone");
             model.setMsg("Hello World!");
             model.setTime("12:53 PM");
