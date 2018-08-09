@@ -55,14 +55,7 @@ public class Tab_People extends Fragment{
         }
 
 
-        ImageView imgView = v.findViewById(R.id.people_morebtn);
-        imgView.setOnClickListener(new View.OnClickListener(){
 
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
 
         return v;
     }

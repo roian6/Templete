@@ -10,7 +10,8 @@
         android:id="@+id/people_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/recycle_item_people">
+        tools:listitem="@layout/recycle_item_people"
+        >
 
     </android.support.v7.widget.RecyclerView>
 
@@ -22,7 +23,7 @@
         android:layout_alignParentBottom="true"
         android:layout_margin="16dp"
         android:src="@drawable/ic_add_white"
-        app:backgroundTint="@color/colorPrimaryDark"
+        app:backgroundTint="@color/colorPrimary"
         />
 
 </RelativeLayout>
