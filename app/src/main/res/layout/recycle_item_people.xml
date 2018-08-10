@@ -27,10 +27,10 @@
                 android:src="@drawable/ic_person"
                 android:background="#727272"
                 />
-            <LinearLayout
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:orientation="horizontal"
                 android:layout_centerInParent="true"
                 android:layout_marginLeft="12dp"
                 android:layout_toRightOf="@+id/people_profile">
@@ -43,9 +43,9 @@
                     android:fontFamily=""
                     />
                 <TextView
-                    android:layout_marginTop="6dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
                     android:text="Message"
                     android:id="@+id/people_msg"
                     android:maxLines="1"
@@ -53,17 +53,9 @@
                     />
 
 
-            </LinearLayout>
+            </RelativeLayout>
 
-            <Button
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:id="@+id/people_morebtn"
-                android:textColor="#000000"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:background="@drawable/ic_more_vert"
-                />
+
 
 
 

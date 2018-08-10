@@ -23,12 +23,12 @@ public class Tab_People extends Fragment{
     RecyclerView rcv;
     RecycleAdapter_People rcvAdap;
 
-    public void showPopup(View v) {
-        PopupMenu popup = new PopupMenu(getContext(), v);
-        MenuInflater inflater = popup.getMenuInflater();
-        inflater.inflate(R.menu.people_more_drawer, popup.getMenu());
-        popup.show();
-    }
+//    public void showPopup(View v) {
+//        PopupMenu popup = new PopupMenu(getContext(), v);
+//        MenuInflater inflater = popup.getMenuInflater();
+//        inflater.inflate(R.menu.people_more_drawer, popup.getMenu());
+//        popup.show();
+//    }
 
     @Nullable
     @Override
@@ -49,7 +49,7 @@ public class Tab_People extends Fragment{
             RecycleModel_People model = new RecycleModel_People();
             model.setProfile(profile);
             model.setName("Someone");
-            model.setMsg("//"+"Coding All Day"+"//");
+            model.setMsg("#"+"Coding All Day");
             rcvAdap.add(model);
             rcvAdap.notifyDataSetChanged();
         }

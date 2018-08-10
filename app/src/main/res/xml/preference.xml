@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <CheckBoxPreference
+        android:key="setting_push"
+        android:title="Push"
+        android:defaultValue="true" />
+    <EditTextPreference
+        android:key="setting_color"
+        android:title="Set Color"
+        android:defaultValue="#FFFFFF"
+        android:dialogTitle="ex. #FFFFFF"
+        android:inputType="text"
+        />
+
+</PreferenceScreen>
