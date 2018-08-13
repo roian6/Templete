@@ -1,7 +1,9 @@
 package com.example.david0926.templete;
 
-import android.app.Fragment;
-import android.content.Context;
+
+
+import android.support.v4.app.DialogFragment;
+import android.content.Intent;
 import android.graphics.Color;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -35,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         //Tab & ViewPager
         TabLayout tabLayout = findViewById(R.id.tabLayout);
 
+        tabLayout.setSelectedTabIndicatorColor(Color.WHITE);
         View view1 = getLayoutInflater().inflate(R.layout.custom_tab, null);
         view1.findViewById(R.id.icon).setBackgroundResource(R.drawable.icon_people);
         tabLayout.addTab(tabLayout.newTab().setCustomView(view1));
@@ -111,8 +114,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.action_devinfo) {
+            DialogFragment dfm = new Dialog_DevInfo();
+            dfm.show(getSupportFragmentManager(), "dialog_devinfo");
         }
 
         return super.onOptionsItemSelected(item);

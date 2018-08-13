@@ -1,5 +1,6 @@
 package com.example.david0926.templete;
 
+import android.graphics.Color;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
