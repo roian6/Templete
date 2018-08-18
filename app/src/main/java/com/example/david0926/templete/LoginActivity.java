@@ -1,5 +1,6 @@
 package com.example.david0926.templete;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -26,11 +27,11 @@ public class LoginActivity extends AppCompatActivity{
                 id = findViewById(R.id.login_id);
                 password = findViewById(R.id.login_password);
                 Toast.makeText(this, "Hello, "+id.getText().toString()+"!", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-                startActivity(intent);
+                startActivity(new Intent(LoginActivity.this, MainActivity.class));
                 break;
-            case R.id.btn_register:
+            case R.id.btn_newaccount:
                 Toast.makeText(this, "YOU CANNOT PASS", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
                 break;
 
         }
