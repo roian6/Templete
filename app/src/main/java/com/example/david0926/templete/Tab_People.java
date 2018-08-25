@@ -41,13 +41,25 @@ public class Tab_People extends Fragment{
         rcvAdap = new RecycleAdapter_People();
         rcv.setAdapter(rcvAdap);
 
+
+//        View itemImageView = inflater.inflate(R.layout.recycle_item_people, container, false);
+//        ImageView profile = itemImageView.findViewById(R.id.people_profile);
+//        profile.setBackground(new ShapeDrawable(new OvalShape()));
+//        profile.setClipToOutline(true);
+        RecycleModel_People model = new RecycleModel_People();
+        model.setProfileId(R.drawable.omnyomnyom_profile);
+        model.setName("Hatban");
+        model.setMsg("#"+"Hell World!");
+        rcvAdap.add(model);
+        rcvAdap.notifyDataSetChanged();
+
         for(int i=0;i<10;i++) {
-            View itemImageView = inflater.inflate(R.layout.recycle_item_people, container, false);
-            ImageView profile = itemImageView.findViewById(R.id.people_profile);
-            profile.setBackground(new ShapeDrawable(new OvalShape()));
-            profile.setClipToOutline(true);
-            RecycleModel_People model = new RecycleModel_People();
-            model.setProfile(profile);
+//            itemImageView = inflater.inflate(R.layout.recycle_item_people, container, false);
+//            profile = itemImageView.findViewById(R.id.people_profile);
+//            profile.setBackground(new ShapeDrawable(new OvalShape()));
+//            profile.setClipToOutline(true);
+            model = new RecycleModel_People();
+            model.setProfileId(R.drawable.ic_person);
             model.setName("Someone");
             model.setMsg("#"+"Coding All Day");
             rcvAdap.add(model);

@@ -23,7 +23,7 @@ public class RecycleAdapter_People extends RecyclerView.Adapter<RecycleHolder_Pe
     public RecycleHolder_People onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.recycle_item_people, parent, false);
-        return new RecycleHolder_People(v);
+        return new RecycleHolder_People(v, R.drawable.ic_person);
     }
 
     @Override
@@ -31,6 +31,7 @@ public class RecycleAdapter_People extends RecyclerView.Adapter<RecycleHolder_Pe
         RecycleModel_People item = items.get(position);
         holder.name.setText(item.getName());
         holder.msg.setText(item.getMsg());
+        holder.profile.setImageResource(items.get(position).getProfileId());
     }
 
     @Override

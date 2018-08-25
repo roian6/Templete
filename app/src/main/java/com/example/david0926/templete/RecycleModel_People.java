@@ -1,17 +1,16 @@
 package com.example.david0926.templete;
 
-import android.widget.ImageView;
 
 public class RecycleModel_People {
     private String name, msg;
-    private ImageView profile;
+    private int profileId;
 
-    public ImageView getProfile() {
-        return profile;
+    public int getProfileId() {
+        return profileId;
     }
 
-    public void setProfile(ImageView profile) {
-        this.profile = profile;
+    public void setProfileId(int profileId) {
+        this.profileId = profileId;
     }
 
     public String getName() {
