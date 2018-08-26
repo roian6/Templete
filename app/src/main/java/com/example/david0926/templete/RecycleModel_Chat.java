@@ -13,7 +13,6 @@ public class RecycleModel_Chat {
         this.profileId = profileId;
     }
 
-
     public String getName() {
         return name;
     }

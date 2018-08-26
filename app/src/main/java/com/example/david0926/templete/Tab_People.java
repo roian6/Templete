@@ -49,7 +49,7 @@ public class Tab_People extends Fragment{
         RecycleModel_People model = new RecycleModel_People();
         model.setProfileId(R.drawable.omnyomnyom_profile);
         model.setName("Hatban");
-        model.setMsg("#"+"Hell World!");
+        model.setMsg("#"+"Coding_Slave");
         rcvAdap.add(model);
         rcvAdap.notifyDataSetChanged();
 
